@@ -29,7 +29,7 @@ namespace ConsoleApp1
         }
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
-            //
+            //fgujfutygyh
         }
 
         public void MakeWithdrawal(decimal amount, DateTime date, string note)
@@ -40,5 +40,17 @@ namespace ConsoleApp1
 
 }
     }
+class Worker
+{
+    internal object CollectData(int v)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal object CollectDataAsync(int v)
+    {
+        throw new NotImplementedException();
+    }
+}
 
 

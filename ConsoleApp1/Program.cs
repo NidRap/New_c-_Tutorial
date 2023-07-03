@@ -3,6 +3,7 @@
 /*
 Hello World 
  */
+using System.ComponentModel;
 using ConsoleApp1;
 
 Console.WriteLine("First C# Code!!!");
@@ -245,3 +246,27 @@ foreach (var item in fibonacciNumber)
 
 var account = new BankAccount("Nidhi", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
+
+
+//linq
+
+int[] num = { 1,2,3, 4,5, 6 };
+int ii = 0;
+var q = (from n in num select ++ii).ToList();
+
+foreach (var item in q)
+{
+    Console.WriteLine($"item ={item} , i = {ii}");
+}
+
+//Async and Wait
+
+
+var worker = new Worker();
+var data = worker.CollectData(50);
+
+foreach(var item in data)
+{
+    Console.WriteLine(item);
+}
+
